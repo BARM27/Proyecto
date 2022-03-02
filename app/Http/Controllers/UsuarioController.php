@@ -30,8 +30,6 @@ class UsuarioController extends Controller
 
 
 
-
-
     public function edit($id)
     {
         $Usuarios = DB::table('usuarios')

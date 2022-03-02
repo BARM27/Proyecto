@@ -102,7 +102,8 @@
 <body>
 
     <div id="div">
-
+    {{-- Formulario Usuarios --}}
+    {{-- 
         <h1>Captura de usuarios</h1>
         <form id="from1">
 
@@ -119,7 +120,7 @@
             <br>
             <button id="subir" type="submit" class="btn btn-primary">Crear nuevo usuario</button>
         </form>
-
+    --}}
 
         <br>
         <br>
