@@ -29,6 +29,9 @@
     function usuarios() {
         $("#contenido").load("{{ url('/Usuarios') }}");
     };
+    function formulariousuarios() {
+        $("#contenido").load("{{ url('/Usuarios/FormularioUsuario') }}");
+    };
 
     function proveedor() {
         $("#contenido").load("{{ url('/Proveedor') }}");

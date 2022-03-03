@@ -102,6 +102,9 @@
 <body>
 
     <div id="div">
+
+    {{-- Boton para mandar a formulario de Usuarios --}}
+    <button class="formulariousuario" id='FormUsuario' href="{{ route('users.forms') }}">+</button>
     {{-- Formulario Usuarios --}}
     {{-- 
         <h1>Captura de usuarios</h1>

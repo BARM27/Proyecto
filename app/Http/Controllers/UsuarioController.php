@@ -15,6 +15,12 @@ class UsuarioController extends Controller
         return view('usuario.usuarios', compact('usuarios'));
     }
 
+    public function formulariousuario()
+    {
+        return view('usuario.FormularioUsuarios');
+    }
+
+
     public function create(Request $request)
     {
         $usuarios = new Usuario();
