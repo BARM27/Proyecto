@@ -48,7 +48,7 @@ Route::get('/ModificarProveedor/{id}/edit', [ProveedorController::class, 'edit']
 Route::put('/ModificarProveedor/{Proveedor}', [ProveedorController::class, 'update'])->name('proveedor.update');
 Route::get('/BorrarProveedor/{id}', [ProveedorController::class, 'delete'])->name('proveedor.delete');
 //Ruta de Formulario Proveedores
-Route::get('/Usuarios/FormularioProveedor', [ProveedorController::class, 'formularioproveedor'])->name('proveedor.forms');
+Route::get('/Proveedor/FormularioProveedor', [ProveedorController::class, 'formularioproveedor'])->name('proveedor.forms');
 //Acaba proveedor
 
 
@@ -68,6 +68,8 @@ Route::post('/Ventas', [VentasController::class, 'create'])->name('ventas.create
 Route::get('/ModificarVentas/{id}/edit', [VentasController::class, 'edit'])->name('ventas.edit');
 Route::put('/ModificarVentas/{id}', [VentasController::class, 'update'])->name('ventas.update');
 Route::get('/BorrarVentas/{id}', [VentasController::class, 'delete'])->name('ventas.delete');
+//Ruta de Formulario Ventas
+Route::get('/Ventas/FormularioVentas', [VentasController::class, 'formularioventas'])->name('ventas.forms');
 //Acaba modulo usuarios
 
 //Empieza modulo productos
@@ -76,4 +78,6 @@ Route::post('/Productos', [ProductosController::class, 'create'])->name('product
 Route::get('/ModificarProductos/{id}/edit', [ProductosController::class, 'edit'])->name('producto.edit');
 Route::put('/ModificarProductos/{id}', [ProductosController::class, 'update'])->name('producto.update');
 Route::get('/BorrarProductos/{id}', [ProductosController::class, 'delete'])->name('producto.delete');
+//Ruta de Formulario Productos
+Route::get('/Productos/FormularioProductos', [ProductosController::class, 'formularioproductos'])->name('producto.forms');
 //Acaba modulo productos

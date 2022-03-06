@@ -62,6 +62,15 @@
 </script>
 
 
+<script>
+    function showform() {
+
+        var url = '{{ route("proveedor.forms") }}';
+        $("#div").load(url);
+    };
+</script>
+
+
 <script type="text/javascript">
     $('#from1').on('submit', function(e) {
         e.preventDefault();
@@ -118,7 +127,7 @@
     <div id="div">
 
     {{-- Boton para mandar a formulario de Proveedores --}}
-    <a class="formularioproveedor" id='FormProveedor' href="{{ route('proveedor.forms') }}">+</a>
+    <button class="formularioproveedor" id='FormProveedor' onclick=showform()>+</button>
     {{-- Formulario Clientes --}}
     {{-- 
         <h1>Captura de Proveedores</h1>
