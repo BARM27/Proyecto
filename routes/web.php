@@ -56,6 +56,8 @@ Route::post('/Clientes', [ClientesController::class, 'create'])->name('cliente.c
 Route::get('/ModificarClientes/{id}/edit', [ClientesController::class, 'edit'])->name('cliente.edit');
 Route::put('/ModificarClientes/{Cliente}', [ClientesController::class, 'update'])->name('cliente.update');
 Route::get('/BorrarCliente/{id}', [ClientesController::class, 'delete'])->name('cliente.delete');
+//Ruta de Formulario Clientes
+Route::get('/Clientes/FormularioClientes', [ClientesController::class, 'formularioclientes'])->name('cliente.forms');
 //Acaba clientes
 
 //Empieza modulo ventas

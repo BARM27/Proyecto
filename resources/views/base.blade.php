@@ -42,8 +42,13 @@
     function clientes() {
         $("#contenido").load("{{ url('/Clientes') }}");
     };
+// Funcion para mandar la ruta de formulario de Usuarios
+function formularioclientes() {
+        $("#contenido").load("{{ url('/Clientes/FormularioClientes') }}");
+    };
 
-    function ventas() {
+
+   function ventas() {
         $("#contenido").load("{{ url('/Ventas') }}");
     };
 

@@ -123,6 +123,10 @@
 
     <div id="div">
 
+    <a class="formularioclientes" id='FormClientes' href="{{ route('cliente.forms') }}">Nuevo</a>
+ 
+    {{-- Formulario Clientes --}}
+    {{-- 
         <h1>Captura de Clientes</h1>
         <form id="from1">
 
@@ -162,13 +166,13 @@
             <br>
             <button id="subir" type="submit" class="btn btn-primary">Crear nuevo cliente</button>
         </form>
-
+  
 
         <br>
         <br>
 
 
-
+        --}}
 
         <h1>Tabla de Clientes actuales</h1>
 
@@ -227,7 +231,7 @@
                 </tr>
                 @endforeach
         </table>
-
+        
     </div>
     @else
     <script>
