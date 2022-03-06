@@ -14,7 +14,7 @@ class UsuarioController extends Controller
 
         return view('usuario.usuarios', compact('usuarios'));
     }
-
+// Funcion para la vista de formulario de Usuarios
     public function formulariousuario()
     {
         return view('usuario.FormularioUsuarios');

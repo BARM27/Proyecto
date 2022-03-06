@@ -29,6 +29,8 @@
     function usuarios() {
         $("#contenido").load("{{ url('/Usuarios') }}");
     };
+
+// Funcion para mandar la ruta de formulario de Usuarios
     function formulariousuarios() {
         $("#contenido").load("{{ url('/Usuarios/FormularioUsuario') }}");
     };
@@ -185,7 +187,7 @@
 
         <footer>
             <div id="footer" class="app-footer m-0">
-                &copy; 2021 TNS Custom Bussiness All Right Reserved
+                &copy; 2022 TNS Custom Bussiness All Right Reserved
             </div>
         </footer>
     </div>

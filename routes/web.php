@@ -36,7 +36,7 @@ Route::post('/Usuarios', [UsuarioController::class, 'create'])->name('users.crea
 Route::get('/ModificarUsuarios/{id}/edit', [UsuarioController::class, 'edit'])->name('users.edit');
 Route::put('/ModificarUsuarios/{Usuarios}', [UsuarioController::class, 'update'])->name('users.update');
 Route::get('/BorrarUsuarios/{id}', [UsuarioController::class, 'delete'])->name('users.delete');
-
+//Ruta de Formulario Usuarios
 Route::get('/Usuarios/FormularioUsuario', [UsuarioController::class, 'formulariousuario'])->name('user.forms');
 //Acaba modulo usuarios
 
