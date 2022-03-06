@@ -117,6 +117,10 @@
     @if(Session::has('users.Usuario'))
     <div id="div">
 
+    {{-- Boton para mandar a formulario de Proveedores --}}
+    <a class="formularioproveedor" id='FormProveedor' href="{{ route('proveedor.forms') }}">+</a>
+    {{-- Formulario Clientes --}}
+    {{-- 
         <h1>Captura de Proveedores</h1>
         <form id="from1">
 
@@ -150,6 +154,8 @@
 
             <br>
             <button id="subir" type="submit" class="btn btn-primary">Crear nuevo proveedor</button>
+
+            --}}
         </form>
 
 

@@ -47,6 +47,8 @@ Route::post('/Proveedor', [ProveedorController::class, 'create'])->name('proveed
 Route::get('/ModificarProveedor/{id}/edit', [ProveedorController::class, 'edit'])->name('proveedor.edit');
 Route::put('/ModificarProveedor/{Proveedor}', [ProveedorController::class, 'update'])->name('proveedor.update');
 Route::get('/BorrarProveedor/{id}', [ProveedorController::class, 'delete'])->name('proveedor.delete');
+//Ruta de Formulario Proveedores
+Route::get('/Usuarios/FormularioProveedor', [ProveedorController::class, 'formularioproveedor'])->name('proveedor.forms');
 //Acaba proveedor
 
 
