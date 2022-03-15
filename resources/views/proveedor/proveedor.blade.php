@@ -62,6 +62,15 @@
 </script>
 
 
+<script>
+    function showform() {
+
+        var url = '{{ route("proveedor.forms") }}';
+        $("#div").load(url);
+    };
+</script>
+
+
 <script type="text/javascript">
     $('#from1').on('submit', function(e) {
         e.preventDefault();
@@ -117,6 +126,10 @@
     @if(Session::has('users.Usuario'))
     <div id="div">
 
+    {{-- Boton para mandar a formulario de Proveedores --}}
+    <button class="formularioproveedor" id='FormProveedor' onclick=showform()>+</button>
+    {{-- Formulario Clientes --}}
+    {{-- 
         <h1>Captura de Proveedores</h1>
         <form id="from1">
 
@@ -150,6 +163,8 @@
 
             <br>
             <button id="subir" type="submit" class="btn btn-primary">Crear nuevo proveedor</button>
+
+            --}}
         </form>
 
 

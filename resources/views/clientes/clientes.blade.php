@@ -61,6 +61,14 @@
     };
 </script>
 
+<script>
+    function showform() {
+
+        var url = '{{ route("cliente.forms") }}';
+        $("#div").load(url);
+    };
+</script>
+
 
 <script type="text/javascript">
     $('#from1').on('submit', function(e) {
@@ -123,6 +131,10 @@
 
     <div id="div">
 
+    <button class="formularioclientes" id='FormClientes' onclick=showform()>+</button>
+ 
+    {{-- Formulario Clientes --}}
+    {{-- 
         <h1>Captura de Clientes</h1>
         <form id="from1">
 
@@ -162,13 +174,13 @@
             <br>
             <button id="subir" type="submit" class="btn btn-primary">Crear nuevo cliente</button>
         </form>
-
+  
 
         <br>
         <br>
 
 
-
+        --}}
 
         <h1>Tabla de Clientes actuales</h1>
 
@@ -227,7 +239,7 @@
                 </tr>
                 @endforeach
         </table>
-
+        
     </div>
     @else
     <script>

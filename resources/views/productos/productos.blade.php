@@ -91,6 +91,13 @@
     };
 </script>
 
+<script>
+    function showformP() {
+
+        var url = '{{ route("producto.forms") }}';
+        $("#div").load(url);
+    };
+</script>
 
 <script type="text/javascript">
     $('#from1').on('submit', function(e) {
@@ -143,7 +150,10 @@
     @if(Session::has('users.Usuario'))
 
     <div id="div">
-
+    {{-- Boton para mandar a formulario de Productos --}}
+    <button class="formularioproductos" id='FormProductos' onclick=showformP()>+</button>
+    {{-- Formulario Productos --}}
+    {{-- 
         <h1>Captura de Productos</h1>
         <form id="from1">
 
@@ -172,7 +182,7 @@
             <button id="subir" type="submit" class="btn btn-primary">Crear nuevo producto</button>
         </form>
 
-
+        --}}
         <br>
         <br>
 

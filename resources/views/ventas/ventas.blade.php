@@ -61,6 +61,14 @@
     };
 </script>
 
+<script>
+    function showformV() {
+
+        var url = '{{ route("ventas.forms") }}';
+        $("#div").load(url);
+    };
+</script>
+
 
 <script type="text/javascript">
     $('#from1').on('submit', function(e) {
@@ -106,7 +114,10 @@
 <body>
 
     <div id="div">
-
+    {{-- Boton para mandar a formulario de Ventas --}}
+    <button class="formularioventas" id='FormVentas' onclick=showformV()>+</button>
+    {{-- Formulario Ventas --}}
+    {{-- 
         <h1>Captura de ventas</h1>
         <form id="from1">
 
@@ -125,7 +136,7 @@
             <br>
             <button id="subir" type="submit" class="btn btn-primary">Crear nueva venta</button>
         </form>
-
+        --}}
 
         <br>
         <br>
